@@ -1,0 +1,34 @@
+coverage
+node_modules
+npm-debug.log
+yarn-error.log
+package-lock.json
+.env
+dist
+
+# Cypress
+cypress-coverage
+cypress/videos/
+.nyc_output
+instrumented
+reports
+
+# ide
+.idea
+
+# Mac General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# umi
+.umi
+.umi-production
+.umirc.*.js
+
+# jslingui
+src/locales/_build
+src/locales/en
+
+# Localstack deploy key
+.deploy_key
