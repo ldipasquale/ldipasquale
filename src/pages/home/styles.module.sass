@@ -1,0 +1,74 @@
+@import 'stylesheets/vars'
+
+.container
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  min-height: 100vh
+  background: #fff
+
+  .toggleButton
+    margin-bottom: 24px
+
+  .content
+    display: flex
+    align-items: center
+
+    .settings
+      display: flex
+      margin-right: 48px
+
+      .colorSetting
+        height: 250px
+        margin-bottom: 24px
+        position: relative
+
+        &.redColorSetting
+          color: $colorRed
+
+        &.greenColorSetting
+          color: $colorGreen
+
+        &.blueColorSetting
+          color: $colorBlue
+
+        .label
+          position: absolute
+          font-size: 12px
+          left: 0
+          bottom: 0
+          transform-origin: 0
+          transform: rotate(-90deg)
+          text-transform: uppercase
+          text-align: center
+
+    .media
+      position: relative
+      width: 640px
+      height: 480px
+
+      .video
+      .chroma
+        width: 640px
+        height: 480px
+
+      .video
+        &.highlightedVideo
+          z-index: 2
+
+      .chroma
+        z-index: 1
+
+      .video,
+      .chroma
+        position: absolute
+        top: 0
+        left: 0
+
+      .chroma
+        background-size: cover
+        background-position: center
+
+  .backgroundSelector
+    margin-top: 24px
